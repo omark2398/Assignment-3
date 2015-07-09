@@ -1,0 +1,30 @@
+/* 
+ * File:   main.cpp
+ * Author: Omar Kaayal
+ *
+ * Created on July 7, 2015, 9:13 PM
+ */
+
+//System Libraries
+#include <iostream> //I/O Library
+#include <cstdlib>
+#include <stdio.h>
+using namespace std;//Namespace for iostream
+int main(int argc, char** argv) {
+    float mass, weight;
+    cout << "Mass of Object? ";
+    cin >> mass;
+    //calculate weight
+    weight = (mass * 9.8);
+    //Display
+    cout << "Weight of object = " << weight << "newtons"<<endl;
+    
+    //condition > 1000 Newtons
+    if (weight > 1000)
+        cout << "It is too heavy" <<endl;
+    //cond < 10
+    else if (weight<10);
+    cout << "It is too light " << endl;
+    return 0;
+}
+

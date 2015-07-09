@@ -1,0 +1,41 @@
+/* 
+ * File:   main.cpp
+ * Author: Omar Kaayal
+ *
+ * Created on July 7, 2015, 10:04 PM
+ */
+
+//System Libraries
+#include <iostream> //I/O Library
+#include <cstdlib>
+#include <stdio.h>
+#include <ctime>
+
+using namespace std;//Namespace for iostream
+
+
+int main(int argc, char** argv) {
+    //variable
+    srand (time (0));
+    const int SEED = 999;
+    int num1, num2, sum, ans;
+    //store random numbers
+    num1 = 1 + rand () % SEED;
+    num2 = 1 + rand () % SEED;
+    //calc sum
+    cout <<"        "<< num1 <<endl;
+    cout << "+ " << "        " << num2 <<endl;
+    cout << "___" <<endl;
+    sum = num1 + num2;
+    //input
+    cout << "Enter answer"<<endl;
+    cin >> ans;
+    //check
+    if (ans==sum)
+        cout <<" Awesome!"<<endl;
+    else
+        cout << "Correct answer is: " << "        " << sum<< endl; 
+
+    return 0;
+}
+

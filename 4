@@ -1,0 +1,73 @@
+/* 
+ * File:   main.cpp
+ * Author: Omar Kaayal
+ *
+ * Created on July 7, 2015, 8:45 PM
+ */
+
+//System Libraries
+#include <iostream> //I/O Library
+#include <cstdlib>
+#include <stdio.h>
+using namespace std;//Namespace for iostream
+
+//User Libraries
+
+//Global Constants
+
+//Function Prototypes
+
+//Execution Begins Here!
+int main(int argc, char** argv) 
+{
+  float l1, l2, w1, w2, a1, a2; //variables length, width, and area
+  
+  //user input
+  cout << "Enter lenght of rectangle #1" <<endl;
+  cin >> l1;
+  cout << "Enter width of rectangle #1" <<endl;
+  cin >> w1;
+  cout << "Enter lenght of rectangle #2" <<endl;
+  cin >> l2;
+  cout << "Enter lenght of rectangle #2" <<endl;
+  cin >> w2;
+  
+  //calculate Area of rectangles
+  a1 = l1 * w1;
+  cout << "Area of rectangle #1 " << a1 <<endl; //rectangle 1
+  a2 = l2 * w2;
+  cout << "Area of rectangle #2 " << a2 <<endl; //rectangle 2
+  
+  if (a1 == a2)
+  {
+      cout << "Equal areas" <<endl;
+  } //end if
+  
+  else  
+  {
+      //check condition
+      if (a1 > a2)
+      { 
+          cout << "Rectangle #1 area is large "<< endl;
+          
+      }//end if
+      
+      else
+      {
+          cout << "Rectangle #2 area is large "; }
+  }
+  }
+
+  
+  
+        
+
+    
+   
+    
+    
+   
+
+    
+
+

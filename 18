@@ -1,0 +1,41 @@
+/* 
+ * File:   main.cpp
+ * Author: Omar Kaayal
+ *
+ * Created on July 7, 2015, 10:23 PM
+ */
+
+#include <iostream> //I/O Library
+#include <cstdlib>
+#include <stdio.h>
+#include <ctime>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) 
+{
+    float wavelength;
+    //input
+    cout << "Wave Length: "<<endl;
+    cin >> wavelength;
+    if (wavelength >= 1E-2)
+        cout << "The wave is Radio wave"<<endl;
+    else if (wavelength < 1E-2 && wavelength > 1e-3)
+        cout << "The wave is Microwave"<<endl;
+    else if (wavelength <= 1E-3 && wavelength > 7e-7)
+        cout << "The wave is Infrared"<<endl;
+    else if (wavelength <= 7E-7 && wavelength > 4e-7)
+        cout << "The wave is visible light"<<endl;
+    else if (wavelength <= 4E-7 && wavelength > 1e-8)
+        cout << "The wave is UV"<<endl;
+    else if (wavelength <= 1E-8 && wavelength > 1e-11)
+        cout << "The wave is Xray"<<endl;
+    else if (wavelength >= 1E-11)
+        cout << "The wave is Gamma ray"<<endl;
+
+    return 0;
+}
+
